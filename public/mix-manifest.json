@@ -1,0 +1,13 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/assets/libs/cute-alert/LICENSE": "/assets/libs/cute-alert/LICENSE",
+    "/assets/libs/cute-alert/README.md": "/assets/libs/cute-alert/README.md",
+    "/assets/libs/cute-alert/cute-alert.js": "/assets/libs/cute-alert/cute-alert.js",
+    "/assets/libs/cute-alert/img/error.svg": "/assets/libs/cute-alert/img/error.svg",
+    "/assets/libs/cute-alert/img/info.svg": "/assets/libs/cute-alert/img/info.svg",
+    "/assets/libs/cute-alert/img/question.svg": "/assets/libs/cute-alert/img/question.svg",
+    "/assets/libs/cute-alert/img/success.svg": "/assets/libs/cute-alert/img/success.svg",
+    "/assets/libs/cute-alert/img/warning.svg": "/assets/libs/cute-alert/img/warning.svg",
+    "/assets/libs/cute-alert/style.css": "/assets/libs/cute-alert/style.css"
+}

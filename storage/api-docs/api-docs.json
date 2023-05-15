@@ -1,0 +1,88 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Artisan Web UI API Documentation",
+        "description": "Artisan Web UI API Documentation",
+        "contact": {
+            "email": "serhiima@develux.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost/api/v1",
+            "description": "Artisan Web UI API Server"
+        }
+    ],
+    "paths": {
+        "/api/v1/artisan/clear-cache": {
+            "get": {
+                "tags": [
+                    "Artisan"
+                ],
+                "summary": "Clear App cache",
+                "description": "Clear App cache",
+                "operationId": "clearCache",
+                "responses": {
+                    "200": {
+                        "description": "App cache cleared"
+                    },
+                    "400": {
+                        "description": "Error clearing cache. Please try again."
+                    }
+                }
+            }
+        },
+        "/api/v1/artisan/table/create": {
+            "post": {
+                "tags": [
+                    "Artisan"
+                ],
+                "summary": "Create new table",
+                "description": "Create new database table with Model, Migration, Seed and Factory",
+                "operationId": "createTable",
+                "parameters": [
+                    {
+                        "name": "table_name",
+                        "in": "query",
+                        "description": "New table name",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "description": "Response status code",
+                                            "type": "string",
+                                            "example": "200"
+                                        },
+                                        "message": {
+                                            "title": "Success message",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Validation failed | Bad request | DB Error"
+                    }
+                }
+            }
+        }
+    }
+}
